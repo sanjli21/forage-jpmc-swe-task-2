@@ -1,0 +1,18 @@
+diff --git a/src/App.tsx b/src/App.tsx
+index 56e4eb4..c2300b7 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -46,11 +46,12 @@ getDataFromServer() {
+       // Update the state by creating a new array of data that consists of
+       // Previous data in the state and the new data from server
+       this.setState({ data: serverResponds, showGraph: true });
++      });
+       x++;
+       if (x > 1000) {
+         clearInterval(interval);
+       }
+-    });
++
+   }, 100);
+ }
+ 
